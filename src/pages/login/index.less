@@ -1,0 +1,97 @@
+// @import '../../common.less';
+
+.login {
+  width: 100%;
+  height: 100vh;
+  background: url(../../assets/logo/bg-login.jpg) no-repeat;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  .logoTop {
+    width: 100%;
+    height: 118px;
+    background: url(../../assets/logo/logotop.png) no-repeat;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+
+    .title {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 70px;
+        height: 70px;
+      }
+
+      h1 {
+        font-size: 35px;
+        font-weight: initial;
+        color: #fff;
+        margin-left: 12px;
+      }
+    }
+  }
+
+  .loginForm {
+    width: 350px;
+    position: absolute;
+    right: 8%;
+    top: 40%;
+
+    .loginButton {
+      background-color: rgba(30, 30, 30, 0.406);
+      width: 100%;
+      margin: 0;
+    }
+
+    :where(.css-dev-only-do-not-override-ph9edi).ant-input-affix-wrapper .anticon.ant-input-password-icon {
+      color: #fff;
+    }
+
+    #basic_password,
+    #basic_username {
+      background: transparent;
+      color: #fff;
+    }
+
+    .ant-input {
+      background-color: rgba(255, 255, 255, 0);
+      color: #FFFFFF;
+
+      &::placeholder {
+        color: #FFFFFF;
+      }
+    }
+
+    .ant-input-affix-wrapper {
+      background: transparent;
+      border: 1px solid hsla(0, 0%, 100%, .1);
+      color: #fff;
+    }
+
+    .normal_login_password::placeholder {
+      color: #889aa4;
+    }
+
+    .ant-input-affix-wrapper::placeholder {
+      color: #889aa4;
+    }
+
+    .ant-input-affix-wrapper {
+      height: 46px;
+    }
+
+    i {
+      color: #889aa4;
+    }
+
+    .loginTip {
+      color: #fff;
+    }
+  }
+}
